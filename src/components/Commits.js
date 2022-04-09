@@ -19,9 +19,7 @@ export const Commits = (props) => {
     }
 
     const DeleteSaved = (savedID) => {
-       const newSaved = [ ...saved, {
-        id: saved.length,
-        value: savedID.target.value}]
+       const newSaved = [ ...saved]
 
        const index = saved.findIndex((saved) => saved.id === savedID);
 
@@ -65,10 +63,13 @@ export const Commits = (props) => {
            {listCommits}
 
         </ul>
-        <ul>
-        <h3>Saved Commits</h3>
-            {result}  
-        </ul>
+        <form>
+            <ul>
+            <h3>Saved Commits</h3>
+                {result}  
+            </ul>
+        </form>
+        
 
         </div>
 }
