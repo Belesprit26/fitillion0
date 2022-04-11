@@ -68,13 +68,20 @@ export const Commits = (props) => {
            {listCommits}
 
         </ul>
-        <form style={{ paddingTop: '30px' }}>
+        <form>
             <ul>
             <h3>Saved Commits</h3>
                 {result}  
             </ul>
         </form>
+        
+
         </div>
 }
 
 export default Commits;
+
+// {saved.map(item => (
+ //   <li key={item.id}>{item.value}</li>
+  //  ))}
+ 

@@ -76,8 +76,7 @@ const SearchBar = () => {
 
    return (
        <>
-    <div class='grid-container-element'>
-    <div class='grid-child-element' style={{ padding: '20px' }}>
+   <div style={{ padding: '20px' }}>
        <input 
        type="text" 
        placeholder="enter username" 
@@ -87,12 +86,9 @@ const SearchBar = () => {
        <button 
        onClick={handleClick}>Search
        </button>
-       <div class='list'>
-       <Results repos={repos}/>
-       </div>
    </div>
-   
-   <div class='grid-child-element' style={{ padding: '20px' }}>
+   <Results repos={repos}/>
+   <div style={{ padding: '20px' }}>
        <input 
        type="text" 
        placeholder="enter repo name" 
@@ -102,10 +98,9 @@ const SearchBar = () => {
        <button 
        onClick={handleClick2}>Search
        </button>
-       <Commits commits={commits}/>
    </div>
-
-   <div class='grid-child-element' style={{ padding: '20px' }}>
+   <Commits commits={commits}/>
+   <div style={{ padding: '20px' }}>
        <input 
        type="text" 
        placeholder="search commit by name" 
@@ -115,10 +110,8 @@ const SearchBar = () => {
        <button 
        onClick={handleClick3}>Search
        </button>
-       <SearchCommits commit={commit}/>
    </div>
-
-    </div>
+   <SearchCommits commit={commit}/>
    </>
    );
 };

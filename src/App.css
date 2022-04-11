@@ -1,0 +1,40 @@
+body {
+    background-color: #e8eef8;
+    color: rgb(14, 13, 13);
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;    
+  }
+
+  ul {
+      list-style-type: none;
+  }
+
+  h1 {
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+  }
+
+  h3 {
+    background-color: #2b4477de;
+    color: white;
+    padding: 5px;
+    font-family: Sans-Serif;
+    text-align: center;
+  }
+
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 5px; 
+    border: 1px solid black; 
+    width: 100%; 
+    } 
+
+.grid-child-element { 
+    margin: 2px; 
+    border: 1px solid rgb(204, 198, 237); 
+    }
